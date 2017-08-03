@@ -17,8 +17,8 @@ header, footer {
 .display-none {
 	display: none;
 }
-.display-show {
-	display: initial;
+.red {
+	color: red;
 }
 header {
 	position: fixed;
@@ -59,4 +59,7 @@ small {
 }
 i {
 	color: white;
+}
+p {
+	margin: 0;
 }
