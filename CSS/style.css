@@ -35,6 +35,7 @@ footer {
 }
 header h1 {
 	margin: 0;
+	margin-left: 5%;
 }
 #main-nav {
 	position: fixed;
@@ -61,7 +62,6 @@ header h1 {
 #main-nav ul li {
 	margin-bottom: calc((20vh / 5) / 2);
 	margin-top: calc((30vh / 5) / 2);
-	
 }
 #main-nav ul li:after {
 	content: "";
@@ -72,9 +72,18 @@ header h1 {
 	margin: auto;
 	margin-top: calc((30vh / 5) / 2);
 }
+#header-menu:after {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin-bottom: 4vh !important;
+}
+#header-menu {
+	font-weight: bold;
+	color: black;
+}
 #ham {
 	position: absolute;
-	top: 20%;
+	top: 4vh;
 	left: 5%;
 }
 html, body {
@@ -114,8 +123,11 @@ main {
 .flex {
 	display: flex;
 }
-img, fieldset, #sugg-main article {
+fieldset, #sugg-main article {
 	box-shadow: 5px 5px 10px black !important;
+}
+img {
+	box-shadow: 6px 6px 10px black !important;	
 }
 p {
 	font-size: 3.25vh !important;
@@ -145,7 +157,7 @@ input {
 	max-width: 30%;
 	height: 50%;
 	max-height: 50%;
-	margin: 2vh 5% 2vh 0;
+	margin: 2vh 5% 3vh 0;
 	border-radius: 50%;
 }
 #index-BG h2 {
@@ -308,4 +320,36 @@ article:after {
 	border-left: 1px solid black;
 	width: 50%;
 	max-width: 50;
+}
+/*ULYSSE && BEST*/
+.ulysse-div {
+	width: 80%;
+	max-width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.ulysse-div img {
+	width: 100%;
+	max-width: 100%;
+	border: solid black 1px;
+}
+.ulysse-div:after {
+	content: "";
+	display: block;
+	background: black;
+	width: 60%;
+	height: 2px;
+	margin: auto;
+	margin-top: 10vh;
+	margin-bottom: 8vh;
+}
+.ulysse-div h2 {
+	font-size: 3.75vh;
+}
+#ulysse-h2 {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 4vh;
+	margin-top: 4vh;
+	margin-bottom: 10vh;
 }
