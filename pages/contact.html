@@ -6,10 +6,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
 		<script src="https://use.fontawesome.com/64906f59e1.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<a href="" id="ham"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<p id="ham"><i class="fa fa-bars" aria-hidden="true"></i></p>
 			<h1>MO-NTAGE-BILE</h1>
 			<nav id="main-nav" class="display-none">
 				<ul>
@@ -22,10 +23,37 @@
 			</nav>
 		</header>
 		<main>
-			
+			<form id="contact-form">
+				<fieldset>
+    				<legend>Formulaire de Contact</legend>
+					<input id="contact-i1" type="email" name="email" placeholder="@mail">
+					<input id="contact-i2" type="text" name="objet" placeholder="objet">
+					<textarea rows="4" cols="30" id="contact-message" placeholder="Entrez votre message."></textarea>
+					<input id="contact-i4" type="submit" name="submit" value="Ok">
+				</fieldset>
+			</form>
+			<section id="contact-social">
+				<fieldset>
+					<legend>Reseaux Sociaux</legend>
+					<a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> Notre Facebook</a>
+					<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i>Notre Twitter</a>
+				</fieldset>
+			</section>
 		</main>
 		<footer>
-			
+			<nav id="footer-nav">
+				<a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</nav>
+			<small>&copy;Bacchus and Jupiter montage</small>
 		</footer>
+		<script type="text/javascript">
+			
+				//$('#main-nav').hide();
+				$("#ham").on('click', function() {
+					$("#main-nav").toggleClass("display-none");
+				});
+			
+		</script>
 	</body>
 </html>

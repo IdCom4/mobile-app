@@ -12,7 +12,7 @@
 		<header>
 			<p id="ham"><i class="fa fa-bars" aria-hidden="true"></i></p>
 			<h1>MO-NTAGE-BILE</h1>
-			<nav id="main-nav">
+			<nav id="main-nav" class="display-none">
 				<ul>
 					<li><a href="#">Accueil</a></li>
 					<li><a href="pages/best.html">Meilleurs montages</a></li>
@@ -23,6 +23,27 @@
 			</nav>
 		</header>
 		<main>
+		<section id="index-section1">
+		<h2 id="index-h2">#Number 1</h2>
+			<img id="index-img1" src="images/hulk.png">
+		</section>
+		<section id="index-BG">
+			<h2>Les BG</h2>
+			<article class="index-article">
+				<div class="flex">
+					<img src="images/titan_romain.jpg">
+					<h3>Romain</h3>
+				</div>
+				<p>Salut c'est Romain, fiéfé plaisantin, grogi du soir au matin, un vrai Tracassin, aux blagues d'assasin !</p>
+			</article>
+			<article class="index-article">
+				<div class="flex">
+					<img src="images/titan_romain.jpg">
+					<h3>Idriss</h3>
+				</div>
+				<p>Salut c'est Idriss, qui n'aime pas les jeux de mots en "iss", ca lui donne la jaunisse ...</p>
+			</article>
+		</section>
 			
 		</main>
 		<footer>
@@ -36,9 +57,9 @@
 		</footer>
 		<script type="text/javascript">
 			
-				$('#main-nav').hide();
+				//$('#main-nav').hide();
 				$("#ham").on('click', function() {
-					$("#main-nav").show();
+					$("#main-nav").toggleClass("display-none");
 				});
 			
 		</script>
