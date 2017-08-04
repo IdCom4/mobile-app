@@ -1,7 +1,7 @@
 /*HEADER/FOOTER & HTML*/
 *, *:before, *:after {
    box-sizing: inherit;
-   font-size: 5vh;
+   font-size: 4.5vh;
 }
 header, footer {
 	width: 100%;
@@ -56,7 +56,7 @@ header h1 {
 #main-nav ul li a {
 	text-decoration: none;
 	color: black;
-	font-size: 6vh;
+	font-size: 4vh;
 }
 #main-nav ul li {
 	margin-bottom: calc((20vh / 5) / 2);
@@ -93,7 +93,7 @@ html, body {
 small {
 	position: absolute;
 	right: 2%;
-	font-size: 3vh;
+	font-size: 2.25vh;
 }
 i {
 	color: white;
@@ -114,7 +114,15 @@ main {
 .flex {
 	display: flex;
 }
-
+img, fieldset, #sugg-main article {
+	box-shadow: 5px 5px 10px black !important;
+}
+p {
+	font-size: 3.25vh !important;
+}
+input {
+	border: solid black 1px !important;
+}
 /*INDEX.HTML*/
 #index-img1 {
 	width: 100%;
@@ -123,9 +131,10 @@ main {
 	max-height: 40%;
 	margin: 5vh 0 5vh 0;
 	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
 }
 #index-h2 {
-	font-size: 4.5vh;
+	font-size: 3.75vh;
 	text-align: center;
 	margin: 0;
 	margin-top: 5vh;
@@ -140,16 +149,16 @@ main {
 	border-radius: 50%;
 }
 #index-BG h2 {
-	font-size: 4.5vh;
+	font-size: 3.75vh;
 	text-align: center;
 	text-decoration: underline;
 }
 article h3 {
-	font-size: 4vh;
+	font-size: 3.5vh;
 	margin-bottom: 0;
 }
 article p {
-	font-size: 3.5vh;
+	font-size: 3.25vh;
 }
 article {
 	width: 90%;
@@ -183,15 +192,15 @@ article:after {
 
 /*CONTACT*/
 #contact-message {
+	font-size: 3.5vh;
 	width: 100%;
 	max-width: 100%;
 	height: 40vh;
-	margin-bottom: 3vh;
-	margin-top: 3vh;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
 	border: solid black 1px;
 }
 #contact-form {
-	font-size: 4vh;
 	display: flex;
 	flex-direction: column;
 	width: 80%;
@@ -199,28 +208,33 @@ article:after {
 	margin: auto;
 	margin-top: 4vh;
 }
+#contact-form fieldset {
+	border-left: 1px solid black;
+}
 #contact-i1, #contact-i2 {
+	font-size: 3.5vh;
 	width: 50%;
-	margin-bottom: 3vh;
-	margin-top: 3vh;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
 	border: solid black 1px;
 }
 #contact-i4 {
+	font-size: 3.5vh;
 	width: 20%;
-	margin-bottom: 3vh;
-	margin-top: 3vh;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
 }
 #contact-social a, #contact-social i {
+	font-size: 3.5vh;
 	color: black;
 	text-decoration: none;
-	margin-bottom: 3vh;
-	margin-top: 3vh;
+	margin-bottom: 2vh;
+	margin-top: 2vh;
 }
 #contact-social a:hover {
 	font-style: italic;
 }
 #contact-social {
-	font-size: 4vh;
 	width: 80%;
 	max-width: 80%;
 	margin: auto;
@@ -229,6 +243,7 @@ article:after {
 	padding-bottom: 5vh;
 }
 #contact-social fieldset {
+	border-left: 1px solid black;
 	display: flex;
 	flex-direction: column;
 }
@@ -274,10 +289,12 @@ article:after {
 	margin-bottom: 6vh;
 }
 #sugg-form fieldset {
+	border-left: 1px solid black;
 	display: flex;
 	flex-direction: column;
 }
 #sugg-form fieldset #sugg-message {
+	border-left: 1px solid black;
 	font-size: 3.5vh;
 	width: 100%;
 	max-width: 100%;
@@ -288,6 +305,7 @@ article:after {
 	font-size: 3.5vh;
 }
 #sugg-form fieldset #sugg-i1 {
+	border-left: 1px solid black;
 	width: 50%;
 	max-width: 50;
 }
