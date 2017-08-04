@@ -35,7 +35,7 @@ footer {
 }
 header h1 {
 	margin: 0;
-	margin-left: 5%;
+	margin-left: 10%;
 }
 #main-nav {
 	position: fixed;
@@ -75,6 +75,7 @@ header h1 {
 #header-menu:after {
 	width: 100% !important;
 	max-width: 100% !important;
+	height: 4px !important;
 	margin-bottom: 4vh !important;
 }
 #header-menu {
@@ -83,7 +84,7 @@ header h1 {
 }
 #ham {
 	position: absolute;
-	top: 4vh;
+	top: 3vh;
 	left: 5%;
 }
 html, body {
@@ -322,18 +323,18 @@ article:after {
 	max-width: 50;
 }
 /*ULYSSE && BEST*/
-.ulysse-div {
+.ulysse-div, .best-div {
 	width: 80%;
 	max-width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
-.ulysse-div img {
+.ulysse-div img, .best-div img {
 	width: 100%;
 	max-width: 100%;
 	border: solid black 1px;
 }
-.ulysse-div:after {
+.ulysse-div:after, .best-div:after {
 	content: "";
 	display: block;
 	background: black;
@@ -343,13 +344,13 @@ article:after {
 	margin-top: 10vh;
 	margin-bottom: 8vh;
 }
-.ulysse-div h2 {
+.ulysse-div h2, .best-div h2 {
 	font-size: 3.75vh;
 }
-#ulysse-h2 {
+#ulysse-h2, #best-h2 {
 	text-decoration: underline;
 	text-align: center;
 	font-size: 4vh;
-	margin-top: 4vh;
+	margin-top: 8vh;
 	margin-bottom: 10vh;
 }
